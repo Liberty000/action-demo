@@ -1,7 +1,7 @@
 FROM alpine:3.10
 
-COPY start.sh ./
+COPY start.sh /root/
 
-RUN chmod +x start.sh
+RUN chmod +x /root/start.sh
 
-ENTRYPOINT ["sh","start.sh"]
+ENTRYPOINT [". /root/start.sh"]
