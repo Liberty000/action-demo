@@ -1,6 +1,6 @@
 FROM alpine:3.10
 
-COPY start.sh ./
+COPY .github/actions/start.sh ./
 
 RUN chmod +x start.sh
 
